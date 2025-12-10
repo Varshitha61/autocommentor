@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Auto-Commenter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button class="new-chat-btn" type="button" onclick="newAnalysis()">
+                    <span>✏️</span>
+                    <span>New Analysis</span>
+                </button>
+            </div>
+            <nav class="sidebar-menu" aria-label="Recent analyses and tools">
+                <div class="menu-section">
+                    <div class="menu-title">Recent</div>
+                    <button class="menu-item" type="button">Python API refactor</button>
+                    <button class="menu-item" type="button">React component docs</button>
+                    <button class="menu-item" type="button">Database migration</button>
+                    <button class="menu-item" type="button">Auth middleware review</button>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-title">Tools</div>
+                    <button class="menu-item" type="button">📁 Upload File</button>
+                    <button class="menu-item" type="button">⚙️ Settings</button>
+                    <button class="menu-item" type="button">📚 Documentation</button>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-title">AI Code Auto-Commenter</div>
+                <button class="upgrade-btn" type="button">
+                    <span>⭐</span>
+                    <span>Upgrade for free</span>
+                </button>
+            </header>
+
+            <section class="chat-area" id="chatArea" aria-live="polite">
+                <div class="welcome-message">
+                    <h1>What code can I help analyze?</h1>
+                </div>
+            </section>
+
+            <section class="input-container">
+                <div class="input-wrapper">
+                    <button
+                        class="icon-btn"
+                        type="button"
+                        aria-label="Upload code file"
+                        onclick="document.getElementById('fileInput').click()"
+                    >
+                        +
+                    </button>
+                    <input
+                        type="file"
+                        id="fileInput"
+                        style="display: none"
+                        accept=".py,.js,.jsx,.ts,.tsx,.java,.cpp,.c,.h,.css,.html"
+                        onchange="handleFileUpload(event)"
+                    >
+                    <input 
+                        type="text" 
+                        class="code-input" 
+                        id="codeInput"
+                        placeholder="Paste your code or upload a file"
+                        onkeydown="handleKeyPress(event)"
+                        aria-label="Code input"
+                    >
+                    <button
+                        class="icon-btn"
+                        type="button"
+                        aria-label="Voice input (not implemented)"
+                    >
+                        🎤
+                    </button>
+                    <button
+                        class="icon-btn"
+                        type="button"
+                        aria-label="Analyze code"
+                        onclick="analyzeCode()"
+                    >
+                        📤
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
