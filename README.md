@@ -26,43 +26,17 @@
 
 ---
 
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) 
-[![Frontend](https://img.shields.io/badge/frontend-HTML%2FCSS%2FJS-blue)](#tech-stack) 
-[![Backend](https://img.shields.io/badge/backend-Express-orange)](#backend-example)
+## 🧠 Project Description
 
----
+The **AI Code Auto-Commenter** is a web-based application that analyzes user-provided source code and automatically generates meaningful comments. Built with **HTML**, **CSS**, and **JavaScript**, the frontend features a clean, responsive, and accessible UI that supports both ✨ code pasting and 📁 file uploads. 
 
-## Live demo / Screenshots
+The app connects to an optional backend API that processes the code and returns intelligently annotated output using rule-based logic or AI models. A built-in fallback engine ensures comments are still generated even if the API is unavailable.
 
-> Replace these placeholder GIFs with actual recordings from your app (e.g. `./images/demo.gif`).
+This project highlights strong skills in:
+- 🎨 Frontend engineering  
+- 📦 Modular UI design  
+- 🔗 API integration  
+- ⚡ Real-time rendering  
+- 🤖 Practical AI-assisted developer tooling  
 
-![Demo GIF placeholder](./images/demo.gif)
-<!-- Optionally use an animated SVG or Lottie embed if you host it. -->
-
----
-
-## Features
-
-- Upload or paste source code (`.js`, `.py`, `.ts`, `.html`, `.css`, etc.)
-- Generates line-level comments (server-side AI or local fallback)
-- Responsive, accessible UI with keyboard support
-- Fallback comment generator when the API is unavailable
-- Modular code (separate `index.html`, `style.css`, `script.js`)
-- Ready to deploy to GitHub Pages (frontend) with any cloud backend for the API
-
----
-
-## Tech Stack
-
-- Frontend: Plain **HTML**, **CSS**, **JavaScript**
-- Backend (optional): **Node.js**, **Express**
-- (Optional AI integration): OpenAI / Claude / other LLM via API
-
----
-
-## Installation (Frontend only)
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/<your-user>/<your-repo>.git
-   cd <your-repo>
+It is fully deployable on **GitHub Pages** and expandable with more advanced AI models.
