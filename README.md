@@ -1,7 +1,7 @@
 # AI Code Auto-Commenter 🚀
 
 > A lightweight web app that analyzes uploaded or pasted source code and automatically generates line-level comments.  
-> Responsive, accessible frontend (HTML/CSS/JS) + optional backend API for AI-powered annotation.
+> Responsive, accessible frontend (HTML/CSS/JS).
 
 ---
 
